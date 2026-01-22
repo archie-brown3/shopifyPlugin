@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey UI Test</title>
+  </head>
+  <body>
+    <h1>Survey UI Test Page</h1>
+
+    <div style="height: 150vh; background: #f0f0f0; padding: 20px">
+      <p>Scroll down, then scroll up or move mouse out of window to trigger.</p>
+      <button id="reset">Reset Throttling</button>
+    </div>
+
+    <script type="module" src="/src/index.js"></script>
+    <script>
+      // Simple manual reset helper if needed (though widget doesn't persist state yet)
+      document.getElementById("reset")?.addEventListener("click", () => {
+        console.log("Reset clicked");
+      });
+    </script>
+  </body>
+</html>
